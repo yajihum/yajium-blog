@@ -1,5 +1,4 @@
 import { ImageResponse } from "@vercel/og";
-import { url } from "inspector";
 import { NextRequest } from "next/server";
 import { name } from "../../lib/constants";
 
@@ -26,8 +25,8 @@ export default function (req: NextRequest) {
         }}
       >
         <div tw="flex flex-col font-medium text-5xl">
-          <span tw="text-8xl ml-25">🌵</span>
           <span>{title}</span>
+          <span tw="text-xl text-gray-400">ちいさなうみ 🐳</span>
         </div>
       </div>
     ),

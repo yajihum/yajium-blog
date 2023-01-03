@@ -6,8 +6,8 @@ icon: "🌅"
 
 あけましておめでとうございます！
 今回のお正月は藤沢にいる友達の家でお泊りをして年越しをしました。その後は初日の出を見に江の島へ行き、キラキラ眩しすぎる太陽を拝んで、最後は鶴岡八幡宮で願い事をしてきました！
-![初日の出](/public/images/2023-01-02/hatsuhinode.jpeg)
-![おみくじ](/public/images/2023-01-02/omikuji.jpeg)
+![初日の出](https://drive.google.com/uc?export=view&id=1AhoDgrJmnRF7AfwMyMWg1BL-wwgTDX4J)
+![おみくじ](https://drive.google.com/uc?export=view&id=1C4XwacbfXmeHZ0cIMujwRC43NO30-LLj)
 
 ## 2022 年の振り返り
 
