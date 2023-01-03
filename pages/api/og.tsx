@@ -7,7 +7,7 @@ export const config = {
 };
 
 const font = fetch(
-  new URL("../../assets/ZenKakuGothicNew-Regular.ttf", import.meta.url)
+  new URL("../../assets/subset-ZenkakkuGothicNew-Reagular.ttf", import.meta.url)
 ).then((res) => res.arrayBuffer());
 
 export default async function (req: NextRequest) {
