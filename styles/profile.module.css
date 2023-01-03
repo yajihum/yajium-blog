@@ -1,0 +1,26 @@
+.profile-detail {
+  @apply mx-10 my-16 grid grid-cols-1 gap-14 text-left;
+}
+
+.profile-detail h2 {
+  @apply border-b border-b-gray-300 pb-3 text-center text-lg;
+}
+
+.profile-detail a {
+  @apply text-sky-500;
+}
+
+.profile-detail a:hover {
+  @apply underline decoration-sky-500 decoration-2 underline-offset-4;
+}
+
+.profile-detail ul {
+  @apply mt-4 ml-4 list-outside list-disc text-lg font-semibold;
+}
+
+.profile-detail li {
+  @apply mt-2;
+}
+
+.profile-detail li span {
+}
