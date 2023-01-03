@@ -17,7 +17,7 @@ const Meta = ({ type, title }: Props) => {
     setUrlOrigin(uri.origin);
   }, []);
 
-  const imageUrl = `${urlOrigin}/api/og?title=${title}&userName=${name}`;
+  const imageUrl = `${urlOrigin}/api/og?title=yajium`;
   const twitter = "@yajium_";
   const siteName = "chi-sanaumi";
 
