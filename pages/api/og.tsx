@@ -6,8 +6,13 @@ export const config = {
   runtime: "experimental-edge",
 };
 
-export default function (req: NextRequest) {
+const font = fetch(
+  new URL("../../assets/ZenKakuGothicNew-Regular.ttf", import.meta.url)
+).then((res) => res.arrayBuffer());
+
+export default async function (req: NextRequest) {
   const { searchParams } = new URL(req.url);
+  const fontData = await font;
   const title = searchParams.get("title")?.slice(0, 100) ?? `${name}のブログ`;
 
   return new ImageResponse(
@@ -24,8 +29,8 @@ export default function (req: NextRequest) {
           justifyContent: "center",
         }}
       >
-        <div tw="flex flex-col font-medium text-5xl">
-          <span>{title}</span>
+        <div tw="flex flex-col text-5xl">
+          <span tw="font-black">{title}</span>
           <span tw="text-xl text-gray-400">ちいさなうみ 🐳</span>
         </div>
       </div>
@@ -33,6 +38,13 @@ export default function (req: NextRequest) {
     {
       width: 1200,
       height: 600,
+      fonts: [
+        {
+          name: "Zen Kaku Gothic New",
+          data: fontData,
+          style: "normal",
+        },
+      ],
     }
   );
 }

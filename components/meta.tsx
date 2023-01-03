@@ -16,13 +16,14 @@ const Meta = ({ type, title }: Props) => {
     const uri = new URL(window.location.href);
     setUrlOrigin(uri.origin);
   }, []);
-  const searchParams = new URLSearchParams(title);
-  const imageUrl = `${urlOrigin}/api/og?title=${searchParams.toString()}`;
+
+  const imageUrl = `${urlOrigin}/api/og?title=${title}`;
   const twitter = "@yajium_";
+  const siteName = "chi-sanaumi";
 
   return (
     <Head>
-      <meta name="description" content={imageUrl} />
+      <meta name="description" content={siteName} />
       <meta property="og:title" content={title} />
       <meta property="og:image" content={imageUrl} />
       <meta property="og:type" content={type} />
