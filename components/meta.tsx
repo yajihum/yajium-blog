@@ -17,7 +17,7 @@ const Meta = ({ type, title }: Props) => {
     setUrlOrigin(uri.origin);
   }, []);
 
-  const imageUrl = `${urlOrigin}/api/og?title=${title}`;
+  const imageUrl = `${urlOrigin}/api/og?title=${title}&userName=${name}`;
   const twitter = "@yajium_";
   const siteName = "chi-sanaumi";
 
@@ -28,8 +28,8 @@ const Meta = ({ type, title }: Props) => {
       <meta property="og:image" content={imageUrl} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url}></meta>
-      <meta property="og:site_name" content={`${name}のブログ`}></meta>
-      <meta property="og:description" content={title} />
+      <meta property="og:site_name" content="ちいさなうみ"></meta>
+      <meta property="og:description" content={`${name}のブログ`} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={twitter} />
       <meta name="twitter:creator" content={twitter} />

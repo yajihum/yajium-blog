@@ -13,7 +13,8 @@ const font = fetch(
 export default async function (req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const fontData = await font;
-  const title = searchParams.get("title")?.slice(0, 100) ?? `${name}のブログ`;
+  const title = searchParams.get("title")?.slice(0, 100) ?? `ちいさなうみ`;
+  const userName = searchParams.get("userName")?.slice(0, 100) ?? "unknown";
 
   return new ImageResponse(
     (
@@ -29,9 +30,10 @@ export default async function (req: NextRequest) {
           justifyContent: "center",
         }}
       >
-        <div tw="flex flex-col text-5xl">
-          <span tw="font-black">{title}</span>
-          <span tw="text-xl text-gray-400">ちいさなうみ 🐳</span>
+        <div tw="flex flex-col">
+          <span tw="font-black text-5xl">{title}</span>
+          <span tw="text-xl text-gray-500 mt-6">ちいさなうみ 🐳</span>
+          <span tw="text-gray-500 text-xl">{userName}</span>
         </div>
       </div>
     ),
