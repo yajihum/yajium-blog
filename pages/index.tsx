@@ -20,19 +20,19 @@ const Home = ({ newPosts }: Props) => {
   return (
     <Layout isHome>
       <Meta title="ちいさなうみ" type="blog"></Meta>
-      <div className="mt-1 flex justify-center">
+      <div className="mt-3 flex justify-center">
         <Image
           priority
           src="/images/yajium.png"
-          className="w-48"
-          height={144}
-          width={144}
+          className="w-32"
+          height={100}
+          width={100}
           alt="yajiuma_icon"
         />
       </div>
       <div className="">
-        <h1 className="text-5xl font-bold">{name}</h1>
-        <p className="mt-5 font-semibold">やじまです</p>
+        <h1 className="text-3xl font-bold">{name}</h1>
+        <p className="mt-3 font-semibold">やじまです</p>
         <div className="mt-10 flex flex-wrap justify-center gap-16">
           <IconContext.Provider value={{ color: "#1e90ff", size: "40px" }}>
             <Link
