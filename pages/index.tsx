@@ -19,7 +19,7 @@ type Props = {
 const Home = ({ newPosts }: Props) => {
   return (
     <Layout isHome>
-      <Meta title={`${name}のブログ`} type="blog"></Meta>
+      <Meta title="ちいさなうみ" type="blog"></Meta>
       <Head>
         <title>{name}のブログ</title>
       </Head>
