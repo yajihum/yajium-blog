@@ -3,7 +3,7 @@
 }
 
 .profile-detail h2 {
-  @apply border-b border-b-gray-300 pb-3 text-center text-lg;
+  @apply border-b border-b-gray-300 pb-3 text-center text-lg font-semibold;
 }
 
 .profile-detail a {
