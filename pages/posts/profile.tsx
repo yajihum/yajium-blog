@@ -8,7 +8,11 @@ import Meta from "components/meta";
 const Profile = () => {
   return (
     <Layout isHome={false}>
-      <Meta title={`${name}のプロフィール`} type="profile"></Meta>
+      <Meta
+        title={`${name}のプロフィール`}
+        type="profile"
+        root="profile"
+      ></Meta>
       <div className="my-6">
         <div className="flex justify-center">
           <Image

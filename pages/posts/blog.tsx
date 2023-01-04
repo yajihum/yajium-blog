@@ -13,7 +13,7 @@ type Props = {
 const Blog = ({ allPosts }: Props) => {
   return (
     <Layout isHome={false}>
-      <Meta title="ブログ一覧" type="posts"></Meta>
+      <Meta title="ブログ一覧" type="posts" root="blog"></Meta>
       <PostsList isHome={false} post={allPosts}></PostsList>
     </Layout>
   );

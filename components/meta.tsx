@@ -5,21 +5,14 @@ import { name } from "../lib/constants";
 type Props = {
   type?: string;
   title?: string;
+  root?: string;
 };
 
-const Meta = ({ type, title }: Props) => {
-  const [url, setUrl] = useState("");
-  const [urlOrigin, setUrlOrigin] = useState("");
-
-  useEffect(() => {
-    setUrl(window.location.href);
-    const uri = new URL(window.location.href);
-    setUrlOrigin(uri.origin);
-  }, []);
-
-  const imageUrl = `${urlOrigin}/api/og?title=${title}`;
+const Meta = ({ type, title, root }: Props) => {
+  const imageUrl = `https://chi-sanaumi.vercel.app/api/og?title=${title}`;
   const twitter = "@yajium_";
   const siteName = "chi-sanaumi";
+  const url = `https://chi-sanaumi.vercel.app/${root}`;
 
   return (
     <Head>
@@ -27,10 +20,7 @@ const Meta = ({ type, title }: Props) => {
       <title>{title}</title>
       <meta name="description" content={siteName} />
       <meta property="og:title" content={title} />
-      <meta
-        property="og:image"
-        content="https://chi-sanaumi.vercel.app/api/og"
-      />
+      <meta property="og:image" content={imageUrl} />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url}></meta>
       <meta property="og:site_name" content="ちいさなうみ"></meta>
