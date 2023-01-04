@@ -6,6 +6,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <script src="https://embed.zenn.studio/js/listen-embed-event.js"></script>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap"
+            rel="stylesheet"
+          ></link>
         </Head>
         <body>
           <Main />
