@@ -9,9 +9,6 @@ const Profile = () => {
   return (
     <Layout isHome={false}>
       <Meta title={`${name}のプロフィール`} type="profile"></Meta>
-      <Head>
-        <title>{name}のプロフィール</title>
-      </Head>
       <div className="my-6">
         <div className="flex justify-center">
           <Image

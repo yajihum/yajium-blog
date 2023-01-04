@@ -23,6 +23,8 @@ const Meta = ({ type, title }: Props) => {
 
   return (
     <Head>
+      <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# prefix属性: http://ogp.me/ns/ prefix属性#"></head>
+      <title>{title}</title>
       <meta name="description" content={siteName} />
       <meta property="og:title" content={title} />
       <meta property="og:image" content={imageUrl} />

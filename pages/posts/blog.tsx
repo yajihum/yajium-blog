@@ -14,9 +14,6 @@ const Blog = ({ allPosts }: Props) => {
   return (
     <Layout isHome={false}>
       <Meta title="ブログ一覧" type="posts"></Meta>
-      <Head>
-        <title>{name}のブログ一覧</title>
-      </Head>
       <PostsList isHome={false} post={allPosts}></PostsList>
     </Layout>
   );

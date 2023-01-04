@@ -20,9 +20,6 @@ const Home = ({ newPosts }: Props) => {
   return (
     <Layout isHome>
       <Meta title="ちいさなうみ" type="blog"></Meta>
-      <Head>
-        <title>{name}のブログ</title>
-      </Head>
       <div className="mt-1 flex justify-center">
         <Image
           priority
