@@ -27,7 +27,10 @@ const Meta = ({ type, title }: Props) => {
       <title>{title}</title>
       <meta name="description" content={siteName} />
       <meta property="og:title" content={title} />
-      <meta property="og:image" content={imageUrl} />
+      <meta
+        property="og:image"
+        content="https://chi-sanaumi.vercel.app/api/og"
+      />
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url}></meta>
       <meta property="og:site_name" content="ちいさなうみ"></meta>
