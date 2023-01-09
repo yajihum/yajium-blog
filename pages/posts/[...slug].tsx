@@ -16,7 +16,7 @@ type Props = {
 const Post = ({ post }: Props) => {
   return (
     <Layout isHome={false}>
-      <Meta title={post.title} type="post" root={`posts/${post.title}`}></Meta>
+      <Meta title={post.title} type="post" root={`posts/${post.slug}`}></Meta>
       <PostHeader post={post}></PostHeader>
       <PostBody content={post.content}></PostBody>
     </Layout>

@@ -9,10 +9,10 @@ type Props = {
 };
 
 const Meta = ({ type, title, root }: Props) => {
-  const imageUrl = `https://chi-sanaumi.vercel.app/api/og?title=${title}`;
+  const imageUrl = `https://chiisanaumi.vercel.app/api/og?title=${title}`;
   const twitter = "@yajium_";
   const siteName = "chi-sanaumi";
-  const url = `https://chi-sanaumi.vercel.app/${root}`;
+  const url = `https://chiisanaumi.vercel.app/${root}`;
 
   return (
     <Head>
