@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type Props = {
   isHome: boolean;
 };
@@ -6,37 +8,37 @@ const Navigation = ({ isHome }: Props) => {
   return (
     <nav className="">
       {isHome ? (
-        <div className="justify-center justify-between bg-white">
+        <div className="bg-white">
           <ul className="grid grid-cols-6 py-4 text-xl font-bold text-gray-500 shadow-lg">
             <li className="col-start-2 col-end-4">
-              <a href="/posts/profile" className="">
+              <Link href="/posts/profile" className="">
                 Profile
-              </a>
+              </Link>
             </li>
             <li className="col-start-4 col-end-6">
-              <a href="/posts/blog" className="">
+              <Link href="/posts/blog" className="">
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       ) : (
-        <div className="justify-center justify-between bg-white">
+        <div className="bg-white">
           <ul className="grid grid-cols-3 py-4 text-xl font-bold text-gray-500 shadow-lg">
             <li className="">
-              <a href="/" className="">
+              <Link href="/" className="">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/posts/profile" className="">
+              <Link href="/posts/profile" className="">
                 Profile
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/posts/blog" className="">
+              <Link href="/posts/blog" className="">
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

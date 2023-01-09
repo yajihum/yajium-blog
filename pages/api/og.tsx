@@ -31,7 +31,7 @@ export default async function (req: NextRequest) {
       >
         <div tw="flex flex-col">
           <span tw="font-black text-5xl">{title}</span>
-          <span tw="text-xl text-gray-500 mt-6">ちいさなうみ 🐳</span>
+          <span tw="text-2xl text-gray-500 mt-6">ちいさなうみ 🐳</span>
         </div>
       </div>
     ),
