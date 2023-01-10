@@ -29,7 +29,6 @@ const ProfileDetail = () => {
         <h2>使ったことがある技術📌</h2>
         <ul>
           <li>C#</li>
-          <li>PHP</li>
           <li>JavaScript(React, Next.js)</li>
           <li>CSS(Tailwind)</li>
         </ul>
@@ -45,7 +44,7 @@ const ProfileDetail = () => {
         <h2>いろいろ🫠</h2>
         <ul>
           <li>
-            文系で社会人になってから本格的にプログラミングを勉強し始めました。日々奮闘中。
+            社会人になってから本格的にプログラミングを勉強し始めました。日々奮闘中。
           </li>
           <li>普段はC#を使ってWEBサイトを作っています。</li>
           <li>
@@ -64,7 +63,7 @@ const ProfileDetail = () => {
         </ul>
       </div>
       <div>
-        <h2>好きなもの🫰</h2>
+        <h2>好きなもの🌻</h2>
         <ul>
           <li>ぬいぐるみ</li>
           <li>パグ(最近ハマってる)</li>
@@ -86,7 +85,7 @@ const ProfileDetail = () => {
         </ul>
       </div>
       <div>
-        <h2>好きな人😳</h2>
+        <h2>ファン🕊️</h2>
         <ul>
           {likePeoples.map((member) => (
             <li key={member.name}>

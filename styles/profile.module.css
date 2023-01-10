@@ -19,7 +19,7 @@
 }
 
 .profile-detail li {
-  @apply mt-2;
+  @apply mt-2 text-gray-600;
 }
 
 .profile-detail li span {

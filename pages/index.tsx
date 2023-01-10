@@ -32,7 +32,7 @@ const Home = ({ newPosts }: Props) => {
       </div>
       <div className="">
         <h1 className="text-3xl font-bold">{name}</h1>
-        <p className="mt-3 font-semibold">やじまです</p>
+        <p className="mt-3 font-semibold">やじまのブログ</p>
         <div className="mt-10 flex flex-wrap justify-center gap-16">
           <IconContext.Provider value={{ color: "#1e90ff", size: "40px" }}>
             <Link
